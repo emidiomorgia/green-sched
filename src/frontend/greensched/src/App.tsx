@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="flex min-h-svh flex-col items-center justify-center">
       <Button onClick={()=> setStatusLabel("Clicked")}>Click me</Button>
-      <span>{statusLabel}</span>
+      <span>Value: {statusLabel}</span>
     </div>
   )
 }
