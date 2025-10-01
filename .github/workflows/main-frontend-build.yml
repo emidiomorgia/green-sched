@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "src/frontend/**"
 
 jobs:
   sonar-main:
@@ -15,5 +17,8 @@ jobs:
           fetch-depth: 0
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v6
+        with:
+          args: >
+            -Dproject.settings=src/frontend/greensched/sonar-project.properties
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
