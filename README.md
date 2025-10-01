@@ -4,6 +4,13 @@
   <img src="docs/logo/greensched-logo.png" alt="GreenSched Logo" width="150"/>
 </p>
 
+
+**Collaborative Waste Collection Calendars**  
+GreenSched is an exploratory project demonstrating Domain-Driven Design (DDD), Clean Architecture (CA), Test-Driven Development (TDD), Command Query Separation (CQS), and event-driven messaging.  
+The project provides a web frontend built with React and ShadCN, Electron for desktop, and PWA capabilities for mobile. The backend is implemented in Spring Boot with microservices representing autonomous Bounded Contexts (BCs).
+
+---
+
 <!-- Tabella BC con badge -->
 <table align="center">
   <thead>
@@ -51,10 +58,6 @@
     </tr>
   </tbody>
 </table>
-
-**Collaborative Waste Collection Calendars**  
-GreenSched is an exploratory project demonstrating Domain-Driven Design (DDD), Clean Architecture (CA), Test-Driven Development (TDD), Command Query Separation (CQS), and event-driven messaging.  
-The project provides a web frontend built with React and ShadCN, Electron for desktop, and PWA capabilities for mobile. The backend is implemented in Spring Boot with microservices representing autonomous Bounded Contexts (BCs).
 
 ---
 
