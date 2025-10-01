@@ -4,16 +4,55 @@
   <img src="docs/logo/greensched-logo.png" alt="GreenSched Logo" width="150"/>
 </p>
 
-<div align="center" style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
-  <img src="https://img.shields.io/github/actions/workflow/status/username/greensched/ci.yml?branch=main" alt="Build Status"/>
-  <img src="https://sonarqube.example.com/api/badges/gate?key=greensched" alt="Sonar Quality Gate"/>
-  <img src="https://sonarqube.example.com/api/badges/coverage?key=greensched" alt="Coverage"/>
-  <img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched" alt="Maintainability"/>
-</div>
-
+<!-- Tabella BC con badge -->
+<table align="center">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Abstract</th>
+      <th>Status</th>
+      <th>Build</th>
+      <th>Coverage</th>
+      <th>Maintainability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Identity BC</td>
+      <td>Manages user registration, authentication, and roles.</td>
+      <td>TBD</td>
+      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-identity/ci.yml?branch=main" alt="Identity Build Status"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-identity" alt="Identity Coverage"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-identity" alt="Identity Maintainability"/></td>
+    </tr>
+    <tr>
+      <td>Calendar BC</td>
+      <td>Handles calendar creation, versioning, duplication, and soft delete.</td>
+      <td>TBD</td>
+      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-calendar/ci.yml?branch=main" alt="Calendar Build Status"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-calendar" alt="Calendar Coverage"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-calendar" alt="Calendar Maintainability"/></td>
+    </tr>
+    <tr>
+      <td>Collaboration BC</td>
+      <td>Manages subscriptions, comments, ratings, and visibility of shared calendars.</td>
+      <td>TBD</td>
+      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-collaboration/ci.yml?branch=main" alt="Collaboration Build Status"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-collaboration" alt="Collaboration Coverage"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-collaboration" alt="Collaboration Maintainability"/></td>
+    </tr>
+    <tr>
+      <td>BFF</td>
+      <td>Backend-for-Frontend orchestrating data from all BCs for the frontend.</td>
+      <td>TBD</td>
+      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-bff/ci.yml?branch=main" alt="BFF Build Status"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-bff" alt="BFF Coverage"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-bff" alt="BFF Maintainability"/></td>
+    </tr>
+  </tbody>
+</table>
 
 **Collaborative Waste Collection Calendars**  
-
 GreenSched is an exploratory project demonstrating Domain-Driven Design (DDD), Clean Architecture (CA), Test-Driven Development (TDD), Command Query Separation (CQS), and event-driven messaging.  
 The project provides a web frontend built with React and ShadCN, Electron for desktop, and PWA capabilities for mobile. The backend is implemented in Spring Boot with microservices representing autonomous Bounded Contexts (BCs).
 
@@ -22,11 +61,10 @@ The project provides a web frontend built with React and ShadCN, Electron for de
 ## Table of Contents
 
 1. [Overview](#overview)  
-2. [Microservices / Bounded Contexts](#microservices--bounded-contexts)  
-3. [Running Locally](#running-locally)  
-4. [Conduct](#conduct)  
-5. [Contributing](#contributing)  
-6. [License](#license)
+2. [Running Locally](#running-locally)  
+3. [Conduct](#conduct)  
+4. [Contributing](#contributing)  
+5. [License](#license)
 
 ---
 
@@ -34,17 +72,6 @@ The project provides a web frontend built with React and ShadCN, Electron for de
 
 GreenSched allows users to view, create, share, and manage municipal waste collection calendars. Features include user registration, calendar versioning, subscriptions, private notes, comments, and ratings.  
 The architecture is based on autonomous Bounded Contexts (Identity, Calendar, Collaboration) and a BFF for orchestrating frontend interactions.
-
----
-
-## Microservices / Bounded Contexts
-
-| Name            | Abstract                                                      | Status       |
-|-----------------|---------------------------------------------------------------|-------------|
-| Identity BC     | Manages user registration, authentication, and roles.        | TBD         |
-| Calendar BC     | Handles calendar creation, versioning, duplication, and soft delete. | TBD         |
-| Collaboration BC | Manages subscriptions, comments, ratings, and visibility of shared calendars. | TBD         |
-| BFF             | Backend-for-Frontend orchestrating data from all BCs for the frontend. | TBD         |
 
 ---
 
