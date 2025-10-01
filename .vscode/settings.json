@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "emidiomorgia",
+        "projectKey": "emidiomorgia_green-sched-app"
+    }
+}
