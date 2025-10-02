@@ -25,6 +25,18 @@ The project provides a web frontend built with React and ShadCN, Electron for de
   </thead>
   <tbody>
     <tr>
+      <td>Frontend</td>
+      <td>Frontend web.</td>
+      <td>TBD</td>
+      <td>
+        <a href="https://github.com/emidiomorgia/green-sched/actions/workflows/main-frontend-build.yml">
+          <img src="https://github.com/emidiomorgia/green-sched/actions/workflows/main-frontend-build.yml/badge.svg?branch=main" alt="Frontend Build Status"/>
+        </a>
+      </td>
+      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-frontend" alt="Frontend Coverage"/></td>
+      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-frontend" alt="Frontend Maintainability"/></td>
+    </tr>
+    <tr>
       <td>Identity BC</td>
       <td>Manages user registration, authentication, and roles.</td>
       <td>TBD</td>
@@ -58,6 +70,7 @@ The project provides a web frontend built with React and ShadCN, Electron for de
     </tr>
   </tbody>
 </table>
+
 
 ---
 
