@@ -1,4 +1,4 @@
-name: SonarQube Main Analysis
+name: Frontend Build and SonarQube Analysis
 
 on:
   push:
