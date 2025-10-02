@@ -12,52 +12,15 @@ The project provides a web frontend built with React and ShadCN, Electron for de
 ---
 
 <!-- Tabella BC con badge -->
-<table align="center">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Abstract</th>
-      <th>Status</th>
-      <th>Build</th>
-      <th>Coverage</th>
-      <th>Maintainability</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Identity BC</td>
-      <td>Manages user registration, authentication, and roles.</td>
-      <td>TBD</td>
-      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-identity/ci.yml?branch=main" alt="Identity Build Status"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-identity" alt="Identity Coverage"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-identity" alt="Identity Maintainability"/></td>
-    </tr>
-    <tr>
-      <td>Calendar BC</td>
-      <td>Handles calendar creation, versioning, duplication, and soft delete.</td>
-      <td>TBD</td>
-      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-calendar/ci.yml?branch=main" alt="Calendar Build Status"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-calendar" alt="Calendar Coverage"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-calendar" alt="Calendar Maintainability"/></td>
-    </tr>
-    <tr>
-      <td>Collaboration BC</td>
-      <td>Manages subscriptions, comments, ratings, and visibility of shared calendars.</td>
-      <td>TBD</td>
-      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-collaboration/ci.yml?branch=main" alt="Collaboration Build Status"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-collaboration" alt="Collaboration Coverage"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-collaboration" alt="Collaboration Maintainability"/></td>
-    </tr>
-    <tr>
-      <td>BFF</td>
-      <td>Backend-for-Frontend orchestrating data from all BCs for the frontend.</td>
-      <td>TBD</td>
-      <td><img src="https://img.shields.io/github/actions/workflow/status/username/greensched-bff/ci.yml?branch=main" alt="BFF Build Status"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-bff" alt="BFF Coverage"/></td>
-      <td><img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-bff" alt="BFF Maintainability"/></td>
-    </tr>
-  </tbody>
-</table>
+# Project Status
+
+| Name          | Abstract | Status |
+|---------------|----------|--------|
+| **Frontend**  | Frontend web. | [![SonarQube Main Analysis](https://github.com/emidiomorgia/green-sched/actions/workflows/main-frontend-build.yml/badge.svg?branch=main)](https://github.com/emidiomorgia/green-sched/actions/workflows/main-frontend-build.yml) <br/> [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=emidiomorgia_green-sched-app&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=emidiomorgia_green-sched-app) <br/> [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=emidiomorgia_green-sched-app&metric=coverage)](https://sonarcloud.io/summary/new_code?id=emidiomorgia_green-sched-app) |
+| **Identity BC** | Manages user registration, authentication, and roles. | <img src="https://img.shields.io/github/actions/workflow/status/username/greensched-identity/ci.yml?branch=main" alt="Identity Build Status"/> <br/> <img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-identity" alt="Identity Coverage"/> <br/> <img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-identity" alt="Identity Maintainability"/> |
+| **Calendar BC** | Handles calendar creation, versioning, duplication, and soft delete. | <img src="https://img.shields.io/github/actions/workflow/status/username/greensched-calendar/ci.yml?branch=main" alt="Calendar Build Status"/> <br/> <img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-calendar" alt="Calendar Coverage"/> <br/> <img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-calendar" alt="Calendar Maintainability"/> |
+| **Collaboration BC** | Manages subscriptions, comments, ratings, and visibility of shared calendars. | <img src="https://img.shields.io/github/actions/workflow/status/username/greensched-collaboration/ci.yml?branch=main" alt="Collaboration Build Status"/> <br/> <img src="https://sonarqube.example.com/api/badges/coverage?key=greensched-collaboration" alt="Collaboration Coverage"/> <br/> <img src="https://sonarqube.example.com/api/badges/maintainability?key=greensched-collaboration" alt="Collaboration Maintainability"/> |
+| **BFF** | Backend-for-Frontend orchestrating data from all BCs for the frontend. | [![BFF Build and SonarQube Analysis](https://github.com/emidiomorgia/green-sched/actions/workflows/main-bff-build.yml/badge.svg)](https://github.com/emidiomorgia/green-sched/actions/workflows/main-bff-build.yml) <br/> [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=emidiomorgia_green-sched-bff&metric=coverage)](https://sonarcloud.io/summary/new_code?id=emidiomorgia_green-sched-bff) <br/> [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=emidiomorgia_green-sched-bff&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=emidiomorgia_green-sched-bff) |
 
 ---
 
