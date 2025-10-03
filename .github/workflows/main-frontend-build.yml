@@ -55,5 +55,6 @@ jobs:
         with:
           args: >
             -Dproject.settings=src/frontend/greensched/sonar-project.properties
+            -Dsonar.projectBaseDir=src/frontend/greensched
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
