@@ -9,7 +9,7 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Layout non autenticato */}
+
         <Route element={<UnauthenticatedLayout />}>
           <Route
             path="/login"
@@ -19,7 +19,7 @@ export function App() {
           />
         </Route>
 
-        {/* Layout autenticato */}
+
         <Route element={<AuthenticatedLayout />}>
           <Route
             path="/dashboard/*"
