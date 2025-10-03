@@ -1,4 +1,4 @@
-name: SonarQube
+name: Build and Test Identity Service with SonarQube Analysis
 on:
   push:
     branches:
@@ -95,5 +95,4 @@ jobs:
       - name: SonarQube Analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-          -Dsonar.projectKey=emidiomorgia_green-sched-identity
+        run: mvn -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=emidiomorgia_green-sched-identity

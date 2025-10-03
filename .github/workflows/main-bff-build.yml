@@ -1,4 +1,4 @@
-name: BFF Build and SonarQube Analysis
+name: Build and Test BFF Service with SonarQube Analysis
 
 on:
   push:
