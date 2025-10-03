@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { RequireAuth} from "./auth/RequireAuth";
 import UnauthenticatedLayout from "./layouts/UnauthenticatedLayout";
 import DashboardPage from "./app-components/DashboardPage";
@@ -9,6 +9,7 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
 
         <Route element={<UnauthenticatedLayout />}>
           <Route

@@ -100,7 +100,10 @@ export function NavUser({
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
+            <DropdownMenuItem onClick={() => {
+              window.localStorage.removeItem("jwt");
+              window.location.href = "/";
+            }}>
               <LogOut />
               Log out
             </DropdownMenuItem>
