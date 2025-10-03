@@ -1,13 +1,13 @@
-package info.morgia.greensched.bff;
+package info.morgia.greensched.identity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BffApplication {
+public class IdentityApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BffApplication.class, args);
+		SpringApplication.run(IdentityApplication.class, args);
 	}
 
 }
