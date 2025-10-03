@@ -54,6 +54,6 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v6
         with:
           args: >
-            -Dproject.settings=src/frontend/greensched/sonar-project.properties
+            -Dproject.settings=sonar-project.properties
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
